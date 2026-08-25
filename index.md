@@ -125,7 +125,6 @@ instead of tracking one racquet over time.
 | Item | What it is |
 |---|---|
 | Mode | Whether this phone is set to "my racquets" or "stringer" |
-| Machine type | Lockout or constant-pull, if you told us |
 | Each job | Date strung, racquet model, string and gauge, the tension you set, and the frequency measured right after |
 
 **The note field never leaves your phone.** It exists so you can tell one
@@ -389,7 +388,6 @@ agreed to.)
 | 항목 | 내용 |
 |---|---|
 | 모드 | 이 폰이 「내 라켓」인지 「스트링어」인지 |
-| 기계 종류 | 락아웃인지 컨스턴트 풀인지 (알려주신 경우) |
 | 작업 한 건 | 작업한 날, 라켓 모델, 스트링과 게이지, 넣으신 작업 텐션, 직후에 잰 주파수 |
 
 **메모 칸은 이 폰을 벗어나지 않습니다.** 라켓을 구분하시라고 둔 칸이고,
