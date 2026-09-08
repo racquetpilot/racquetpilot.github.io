@@ -18,6 +18,18 @@ date we checked it. If yours is missing, tell us on the [support page](/support/
 
 게이지는 `라벨 (지름 mm)` 입니다. / Gauge is shown as `label (diameter in mm)`.
 
+---
+
+## 미리보기 / Preview — String Gauge Bench
+
+**[/strings/lab/](/strings/lab/)** — 스트링을 더 자세히 보는 화면의 미리보기입니다.
+**접근 코드가 필요합니다.** 지금은 함께 작업하는 분들께만 드리고, 이후 **협업자와 유료 회원**에게 열 예정입니다.
+코드 문의는 [지원 페이지](/support/)로.
+
+A preview of the detailed string viewer. **Access code required.** Currently
+for collaborators only; planned to open to **collaborators and paid members.**
+Ask for a code on the [support page](/support/).
+
 
 ## Babolat (12)
 
