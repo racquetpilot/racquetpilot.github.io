@@ -4,6 +4,8 @@ description: TensionPilot 이 무엇을 보내고 어디에 보관하며 어떻�
 permalink: /privacy/
 ---
 
+[홈 / Home](/) · [스트링 / Strings](/strings/) · [지원 / Support](/support/) · **처리방침 / Privacy**
+
 # Privacy Policy / 개인정보 처리방침
 
 **RacquetPilot** (beta)

@@ -4,6 +4,8 @@ description: TensionPilot 문의 · 베타 참여 · 데이터 삭제 요청 —
 permalink: /support/
 ---
 
+[홈 / Home](/) · [스트링 / Strings](/strings/) · **지원 / Support** · [처리방침 / Privacy](/privacy/)
+
 # 지원 / Support
 
 ## 문의 / Contact
