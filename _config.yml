@@ -1,3 +1,14 @@
 title: TensionPilot
 description: 테니스 스트링 텐션을 폰으로 잽니다 · Measure tennis string tension with your phone
 theme: jekyll-theme-minimal
+
+# canonical · sitemap · og:url 이 https 로 나가게 한다. 없으면 GitHub 이 http 로 추정한다.
+url: https://racquetpilot.com
+
+# 둘 다 GitHub Pages 허용 목록에 있다. seo-tag 는 테마가 이미 쓰고, sitemap 은 /sitemap.xml 을 만든다.
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 분석 도구를 쓰지 않는다 — 처리방침 §1 "분석 도구(Analytics)도 없습니다" 와 맞춘다.
+google_analytics: ""

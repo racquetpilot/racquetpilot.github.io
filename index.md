@@ -1,3 +1,9 @@
+---
+title: TensionPilot
+description: 테니스 스트링 텐션을 폰으로 잽니다 · 스트링을 톡톡 쳐서 텐션 로스를 추적합니다 — Measure tennis string tension with your phone and track tension loss over time
+permalink: /
+---
+
 # TensionPilot
 
 **테니스 스트링 텐션을 폰으로 잽니다.**
@@ -35,7 +41,8 @@ no extra equipment, on court, in seconds.
 
 ## 문의 / Contact
 
-**bizforeverything@gmail.com**
+**bizforeverything@gmail.com** — 문제 보고와 베타 참여는 **[지원 페이지](/support/)** 를 봐 주세요.
+For bug reports and beta access, see the **[support page](/support/)**.
 
 ---
 

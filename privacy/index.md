@@ -1,3 +1,9 @@
+---
+title: Privacy Policy / 개인정보 처리방침
+description: TensionPilot 이 무엇을 보내고 어디에 보관하며 어떻게 지우는지 — What TensionPilot sends, where it is stored, and how to delete it
+permalink: /privacy/
+---
+
 # Privacy Policy / 개인정보 처리방침
 
 **RacquetPilot** (beta)
@@ -30,6 +36,7 @@ Each time you finish a measurement:
 | Measurements | Frequency, retention, cumulative play hours, timestamp, season |
 | Racquet | Make, model, head size, string pattern |
 | String | Brand, model, gauge, machine tension, date strung |
+| **Record ids** | Random numbers we generate for each racquet, stringing and reading, so the same one arriving twice is counted once. They say nothing about you — see 3 |
 | App version | To reproduce issues |
 | Diagnostics | Numbers telling us whether the app is working correctly |
 | Test marker | A yes/no flag showing the record was created by the developer while checking the screens, so it can be excluded from analysis |
@@ -128,11 +135,31 @@ instead of tracking one racquet over time.
 | Each job | Date strung, racquet model, string and gauge, the tension you set, and the frequency measured right after |
 
 **The note field never leaves your phone.** It exists so you can tell one
-racquet from another, and it is the one place a customer's name could end up.
+racquet from another, and it is a place a customer's name could end up.
 It is not in what we send.
 
-**We do not ask for and do not receive anything about your customers** — no
-names, no phone numbers, no order numbers.
+### Customers — names stay here, we only get a number
+
+If you use customer management, you can **store customer names on this phone.**
+Here is where each thing lives.
+
+| | Where it lives | Do we receive it |
+|---|---|---|
+| Customer **name** (and anything else you type) | **This phone only** | **No** |
+| Customer **number** (like `17b760-003`) | Phone + our server | Yes |
+| That racquet's jobs and readings | Phone + our server | Yes, tied to the number |
+
+**The customer number is the shop code we issued you plus a running count.**
+By itself it identifies no one — which number belongs to which person exists
+**only on your phone**. We know "the third customer of some shop" and nothing
+about who that is.
+
+Why send the number at all: linking the same customer's racquet across visits
+is what lets us show you how that racquet's tension moved over time. It works
+without a name.
+
+**We do not ask for phone numbers, contact details or order numbers.** If you
+change phones or delete the app, the names go with it — we hold no copy.
 
 ### About you, asked once
 
@@ -307,6 +334,7 @@ agreed to.)
 | 측정값 | 주파수, 유지율, 누적 플레이 시간, 측정 시각, 계절 |
 | 라켓 정보 | 제조사, 모델, 헤드 크기, 스트링 패턴 |
 | 스트링 정보 | 브랜드, 모델, 게이지, 머신 텐션, 작업일 |
+| **기록 식별자** | 라켓·작업·측정마다 저희가 만드는 **임의의 숫자**. 같은 기록이 두 번 도착해도 한 건으로 세기 위한 것입니다. 사용자에 대해서는 아무것도 말하지 않습니다 — 3번 참고 |
 | 앱 버전 | 문제 재현용 |
 | 진단값 | 스트링 정보를 몇 개 받아 뒀는지 등, 앱이 정상 동작하는지 보는 숫자 |
 | 테스트 표시 | 개발자가 화면을 확인하며 만든 기록인지 여부. 분석에서 빼기 위한 것입니다 |
@@ -404,11 +432,29 @@ agreed to.)
 | 작업 한 건 | 작업한 날, 라켓 모델, 스트링과 게이지, 넣으신 작업 텐션, 직후에 잰 주파수 |
 
 **메모 칸은 이 폰을 벗어나지 않습니다.** 라켓을 구분하시라고 둔 칸이고,
-손님 이름이 들어갈 수 있는 유일한 자리입니다. 저희가 받는 것에 들어 있지
-않습니다.
+손님 이름이 들어갈 수 있는 자리입니다. 저희가 받는 것에 들어 있지 않습니다.
 
-**손님에 대한 것은 묻지도 않고 받지도 않습니다** — 이름·전화번호·접수번호
-어느 것도 해당합니다.
+### 손님 정보 — 이름은 폰에, 저희에게는 번호만
+
+고객 관리를 쓰시면 **손님 이름을 이 폰에 저장하실 수 있습니다.** 그때
+무엇이 어디에 사는지는 이렇습니다.
+
+| | 어디에 사나 | 저희에게 오나 |
+|---|---|---|
+| 손님 **이름** (그 밖에 적으신 말) | **이 폰에만** | **오지 않습니다** |
+| 손님 **번호** (`17b760-003` 꼴) | 폰 + 저희 서버 | 옵니다 |
+| 그 라켓의 작업·측정 | 폰 + 저희 서버 | 번호에 묶여서 옵니다 |
+
+**손님 번호는 저희가 발급한 샵 코드에 순번을 붙인 것입니다.** 그 자체로는
+아무도 못 알아봅니다 — 어느 번호가 누구인지는 **사장님 폰에만** 있습니다.
+저희는 「어느 샵의 세 번째 손님」까지만 알고, 그 사람이 누구인지는 모릅니다.
+
+왜 번호라도 보내는가: 같은 손님의 라켓이 여러 번 들어왔을 때 그것을 이어야
+「이 라켓의 텐션이 그동안 어떻게 움직였나」를 사장님 화면에 보여 드릴 수
+있습니다. 이름 없이 그게 됩니다.
+
+**전화번호·연락처·접수번호는 묻지 않습니다.** 폰을 바꾸시거나 앱을 지우시면
+이름은 함께 사라집니다 — 저희에게 사본이 없기 때문입니다.
 
 ### 스트링어 본인에 대해, 한 번만
 
