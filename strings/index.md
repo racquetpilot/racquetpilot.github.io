@@ -1,6 +1,6 @@
 ---
 title: 스트링 목록 / Supported strings
-description: TensionPilot 이 알고 있는 테니스 스트링 128종 — 브랜드·모델·구조·게이지 (제조사 공개 스펙) · 128 tennis strings by brand, construction and gauge
+description: TensionPilot 이 알고 있는 테니스 스트링 129종 — 브랜드·모델·구조·게이지 (제조사 공개 스펙) · 129 tennis strings by brand, construction and gauge
 permalink: /strings/
 ---
 
@@ -8,11 +8,11 @@ permalink: /strings/
 
 # 스트링 목록 / Supported strings
 
-앱에서 고를 수 있는 스트링 **128종**입니다. 브랜드·모델·구조·게이지는
+앱에서 고를 수 있는 스트링 **129종**입니다. 브랜드·모델·구조·게이지는
 **제조사가 공개한 스펙**이고, 각 항목은 출처와 확인 날짜와 함께 보관합니다.
 쓰시는 스트링이 없으면 [지원 페이지](/support/)로 알려 주세요. 다음 판에 넣습니다.
 
-**128 strings** you can pick in the app. Brand, model, construction and
+**129 strings** you can pick in the app. Brand, model, construction and
 gauge are **manufacturer-published specs**, each stored with its source and the
 date we checked it. If yours is missing, tell us on the [support page](/support/).
 
@@ -120,7 +120,7 @@ Ask for a code on the [support page](/support/).
 | 4G | 폴리 / Polyester | 16L (1.25) |
 | 4G Rough | 폴리 / Polyester | 16L (1.25) |
 | 4G Soft | 폴리 / Polyester | 16L (1.25) |
-| ALU Power | 폴리 / Polyester | 16 (1.30) · 16L (1.25) |
+| ALU Power | 폴리 / Polyester | 16 (1.30) · 16L (1.25) · 18 (1.15) |
 | ALU Power Rough | 폴리 / Polyester | 16L (1.25) |
 | ALU Power Soft | 폴리 / Polyester | 16L (1.25) |
 | Eco Power | 폴리 / Polyester | 16L (1.25) |
@@ -217,7 +217,7 @@ Ask for a code on the [support page](/support/).
 | Sensation Plus | 멀티 / Multifilament | 16 (1.30) |
 | Synthetic Gut Power | 신세틱 것 / Synthetic gut | 16 (1.30) · 17 (1.20) |
 
-## Yonex (12)
+## Yonex (13)
 
 | 모델 / Model | 구조 / Construction | 게이지 / Gauges |
 |---|---|---|
@@ -230,6 +230,7 @@ Ask for a code on the [support page](/support/).
 | Poly Tour Rev | 폴리 / Polyester | None (1.30) · None (1.25) · None (1.20) |
 | Poly Tour Spin | 폴리 / Polyester | 16L (1.25) · None (1.20) |
 | Poly Tour Strike | 폴리 / Polyester | None (1.30) · None (1.25) · None (1.20) |
+| Poly Tour Tough | 폴리 / Polyester | 16L (1.25) |
 | Rexis Comfort | 멀티 / Multifilament | None (1.30) · None (1.25) |
 | Rexis Feel | 멀티 / Multifilament | None (1.30) · None (1.25) |
 | Rexis Speed | 멀티 / Multifilament | None (1.30) · None (1.25) |
