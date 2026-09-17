@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the TensionPilot beta</title>
+<meta name="description" content="TensionPilot closed beta. An email and your device (iPhone / Android) is all we need to send an invite.">
+<link rel="canonical" href="https://racquetpilot.com/en/beta/">
+<link rel="alternate" hreflang="en" href="https://racquetpilot.com/en/beta/">
+<link rel="alternate" hreflang="ko" href="https://racquetpilot.com/beta/">
+<link rel="alternate" hreflang="x-default" href="https://racquetpilot.com/en/beta/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RacquetPilot">
+<meta property="og:title" content="Join the TensionPilot beta">
+<meta property="og:description" content="An email and your device is all we need.">
+<meta property="og:url" content="https://racquetpilot.com/en/beta/">
+<meta property="og:image" content="https://racquetpilot.com/assets/scene_grass.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/icon512.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="wrap">
+  <nav class="nav">
+    <a class="logo" href="/en/"><img src="/assets/logo.png" alt="">RacquetPilot</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M1 2h20M1 8h20M1 14h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <ul><li><a href="/en/#app">TensionPilot</a></li><li><a href="/en/lab/">Lab</a></li><li><a href="/en/strings/">Strings</a></li><li><a href="/en/support/">Support</a></li><li><a class="lang" href="/beta/" data-lang-switch="ko" hreflang="ko">한국어</a></li></ul>
+    <a class="btn small primary" href="/en/beta/">Join the beta</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="block prose">
+    <span class="lbl">Beta</span>
+    <h1>Join the TensionPilot beta</h1>
+    <p>It's invite-only, and an email is all we need. iPhone gets a TestFlight invite, Android gets the install file. We usually reply within two days. In the beta the app still shows up as <b>RacquetPilot</b>.</p>
+  </section>
+  <section class="block" style="padding-top:0">
+    <form class="form" id="betaForm" novalidate>
+      <input type="text" id="f_web" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <div class="row">
+        <label><span class="lt">Nickname</span><input type="text" id="f_name" name="name" required autocomplete="nickname" placeholder="Doesn't have to be your real name"></label>
+        <label><span class="lt">Email</span><input type="email" id="f_email" name="email" required autocomplete="email" placeholder="Where the invite goes"></label>
+      </div>
+      <p class="hint">Nickname, email and device are all we need. Everything else is <b>optional</b> — tell us as much as you like.</p>
+      <div class="row">
+        <label><span class="lt">Device</span><select id="f_device" name="device" required><option value="">Choose</option><option>iPhone</option><option>Android</option></select></label>
+        <label><span class="lt">Hours per week <em>(optional)</em></span><select id="f_hours" name="hours"><option value="">Choose</option><option>Under 1</option><option>1–3</option><option>3–6</option><option>6+</option></select></label>
+      </div>
+      <div class="row">
+        <label><span class="lt">Phone model <em>(optional)</em></span><input type="text" id="f_model" name="model" placeholder="e.g. iPhone 15 Pro, Galaxy S24"></label>
+        <label><span class="lt">Racquet <em>(optional)</em></span><input type="text" id="f_racquet" name="racquet" placeholder="e.g. Head Gravity Tour 98, two of them"></label>
+      </div>
+      <label><span class="lt">String and tension <em>(optional)</em></span><input type="text" id="f_string" name="string" placeholder="e.g. Solinco Hyper-G 1.20, 52 lb"></label>
+      <label><span class="lt">Anything else <em>(optional)</em></span><textarea id="f_note" name="note" placeholder="Questions, hopes, anything."></textarea></label>
+      <div class="actions"><button class="btn primary" type="submit">Send the request</button><span class="status" id="status"></span></div>
+      <p class="hint">The button sends this straight to our inbox. If the server doesn't answer, your mail app opens instead. If neither works, write to <a href="mailto:racquetpilot@gmail.com">racquetpilot@gmail.com</a>. We use this only for the invite, as described in the privacy policy.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="wrap foot"><span>RacquetPilot LLC</span><span class="links"><a href="/en/privacy/">Privacy</a><a href="/en/support/">Support</a><a href="/beta/" data-lang-switch="ko" hreflang="ko">한국어</a></span></footer>
+<script src="/js/site.js"></script>
+<script>
+// 전송: Cloudflare Worker(worker/beta-form) 로 JSON POST. 서버가 응답하지 않으면 메일 앱(mailto)으로 넘어간다. 분석 도구 없음.
+const FORM_ENDPOINT = "https://forms.racquetpilot.com/beta";
+const TO = "racquetpilot@gmail.com";
+document.getElementById("betaForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const st = document.getElementById("status");
+  if (!v("f_name") || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("f_email")) || !v("f_device")) { st.textContent = "Nickname, email and device are required."; st.style.color = "#8A4B12"; return; }
+  const f = { lang: "en", name: v("f_name"), email: v("f_email"), device: v("f_device"), model: v("f_model"), hours: v("f_hours"), racquet: v("f_racquet"), string: v("f_string"), note: v("f_note"), website: v("f_web") };
+  st.style.color = "";
+  if (FORM_ENDPOINT) {
+    st.textContent = "Sending…";
+    try {
+      const r = await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(f) });
+      if (r.ok) { st.textContent = "Got it. We'll reply within two days."; e.target.reset(); return; }
+    } catch {}
+    st.textContent = "The server didn't answer, so your mail app is opening. Just hit send.";
+  } else {
+    st.textContent = "Your mail app is opening. Just hit send.";
+  }
+  const lines = [`Nickname: ${f.name}`, `Email: ${f.email}`, `Device: ${f.device} ${f.model}`, `Hours/week: ${f.hours}`, `Racquet: ${f.racquet}`, `String/tension: ${f.string}`, ``, `Note:`, f.note];
+  window.location.href = `mailto:${TO}?subject=${encodeURIComponent("TensionPilot beta request — " + f.name)}&body=${encodeURIComponent(lines.join("\n"))}`;
+});
+</script>
+</body>
+</html>

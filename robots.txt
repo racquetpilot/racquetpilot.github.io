@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /strings/lab/
 
 Sitemap: https://racquetpilot.com/sitemap.xml

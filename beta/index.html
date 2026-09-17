@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TensionPilot 베타 신청</title>
+<meta name="description" content="TensionPilot 비공개 베타 신청. 이메일과 기기(iPhone / Android)만 적어 주시면 초대를 보내 드려요.">
+<link rel="canonical" href="https://racquetpilot.com/beta/">
+<link rel="alternate" hreflang="ko" href="https://racquetpilot.com/beta/">
+<link rel="alternate" hreflang="en" href="https://racquetpilot.com/en/beta/">
+<link rel="alternate" hreflang="x-default" href="https://racquetpilot.com/en/beta/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RacquetPilot">
+<meta property="og:title" content="TensionPilot 베타 신청">
+<meta property="og:description" content="이메일과 기기(iPhone / Android)만 적어 주시면 초대를 보내 드려요.">
+<meta property="og:url" content="https://racquetpilot.com/beta/">
+<meta property="og:image" content="https://racquetpilot.com/assets/scene_grass.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="685">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/icon512.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="wrap">
+  <nav class="nav">
+    <a class="logo" href="/"><img src="/assets/logo.png" alt="">RacquetPilot</a>
+    <button class="burger" aria-label="메뉴" aria-expanded="false"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M1 2h20M1 8h20M1 14h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <ul><li><a href="/#app">TensionPilot</a></li><li><a href="/lab/">실험실</a></li><li><a href="/strings/">스트링</a></li><li><a href="/support/">지원</a></li><li><a class="lang" href="/en/beta/" data-lang-switch="en" hreflang="en">EN</a></li></ul>
+    <a class="btn small primary" href="/beta/">베타 신청</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="block prose">
+    <span class="lbl">Beta</span>
+    <h1>TensionPilot 베타 신청</h1>
+    <p>지금은 초대제예요. 이메일만 있으면 돼요. iPhone 은 TestFlight 초대를, 안드로이드는 설치 파일을 보내 드려요. 보통 이틀 안에 답장해요. 베타에서는 아직 <b>RacquetPilot</b> 이라는 이름으로 표시돼요.</p>
+  </section>
+  <section class="block" style="padding-top:0">
+    <form class="form" id="betaForm" novalidate>
+      <input type="text" id="f_web" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <div class="row">
+        <label><span class="lt">닉네임</span><input type="text" id="f_name" name="name" required autocomplete="nickname" placeholder="실명 아니어도 돼요"></label>
+        <label><span class="lt">이메일</span><input type="email" id="f_email" name="email" required autocomplete="email" placeholder="초대를 받을 주소"></label>
+      </div>
+      <p class="hint">닉네임·이메일·기기만 있으면 돼요. 나머지는 <b>선택</b>이에요. 아는 만큼만 적어 주세요.</p>
+      <div class="row">
+        <label><span class="lt">기기</span><select id="f_device" name="device" required><option value="">고르기</option><option>iPhone</option><option>Android</option></select></label>
+        <label><span class="lt">일주일에 몇 시간 치세요? <em>(선택)</em></span><select id="f_hours" name="hours"><option value="">고르기</option><option>1시간 이하</option><option>1~3시간</option><option>3~6시간</option><option>6시간 이상</option></select></label>
+      </div>
+      <div class="row">
+        <label><span class="lt">폰 모델 <em>(선택)</em></span><input type="text" id="f_model" name="model" placeholder="예: iPhone 15 Pro, Galaxy S24"></label>
+        <label><span class="lt">라켓 <em>(선택)</em></span><input type="text" id="f_racquet" name="racquet" placeholder="예: Head Gravity Tour 98, 두 대"></label>
+      </div>
+      <label><span class="lt">스트링과 맨 텐션 <em>(선택)</em></span><input type="text" id="f_string" name="string" placeholder="예: Solinco Hyper-G 1.20, 52 lb"></label>
+      <label><span class="lt">한마디 <em>(선택)</em></span><textarea id="f_note" name="note" placeholder="궁금한 것, 기대하는 것, 아무거나."></textarea></label>
+      <div class="actions"><button class="btn primary" type="submit">신청 보내기</button><span class="status" id="status"></span></div>
+      <p class="hint">버튼을 누르면 저희 메일함으로 바로 가요. 서버가 응답하지 않으면 메일 앱이 대신 열려요. 둘 다 안 되면 <a href="mailto:racquetpilot@gmail.com">racquetpilot@gmail.com</a> 으로 직접 보내 주세요. 적으신 내용은 초대에만 쓰고, 처리방침대로 다뤄요.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="wrap foot"><span>RacquetPilot LLC</span><span class="links"><a href="/privacy/">개인정보 처리방침</a><a href="/support/">지원</a><a href="/en/beta/" data-lang-switch="en" hreflang="en">EN</a></span></footer>
+<script src="/js/site.js"></script>
+<script>
+// 전송: Cloudflare Worker(worker/beta-form) 로 JSON POST. 서버가 응답하지 않으면 메일 앱(mailto)으로 넘어간다. 분석 도구 없음.
+const FORM_ENDPOINT = "https://forms.racquetpilot.com/beta";
+const TO = "racquetpilot@gmail.com";
+document.getElementById("betaForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const st = document.getElementById("status");
+  if (!v("f_name") || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("f_email")) || !v("f_device")) { st.textContent = "닉네임, 이메일, 기기는 꼭 적어 주세요."; st.style.color = "#8A4B12"; return; }
+  const f = { lang: "ko", name: v("f_name"), email: v("f_email"), device: v("f_device"), model: v("f_model"), hours: v("f_hours"), racquet: v("f_racquet"), string: v("f_string"), note: v("f_note"), website: v("f_web") };
+  st.style.color = "";
+  if (FORM_ENDPOINT) {
+    st.textContent = "보내는 중…";
+    try {
+      const r = await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(f) });
+      if (r.ok) { st.textContent = "받았어요. 이틀 안에 답장할게요."; e.target.reset(); return; }
+    } catch {}
+    st.textContent = "서버가 응답하지 않아 메일 앱으로 열어요. 보내기만 누르시면 돼요.";
+  } else {
+    st.textContent = "메일 앱이 열려요. 보내기만 누르시면 돼요.";
+  }
+  const lines = [`닉네임: ${f.name}`, `이메일: ${f.email}`, `기기: ${f.device} ${f.model}`, `주간 플레이: ${f.hours}`, `라켓: ${f.racquet}`, `스트링/텐션: ${f.string}`, ``, `한마디:`, f.note];
+  window.location.href = `mailto:${TO}?subject=${encodeURIComponent("TensionPilot 베타 신청 — " + f.name)}&body=${encodeURIComponent(lines.join("\n"))}`;
+});
+</script>
+</body>
+</html>
