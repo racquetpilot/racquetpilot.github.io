@@ -5,6 +5,21 @@
     b.addEventListener('click',function(){var o=u.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')});
     document.addEventListener('click',function(e){if(!e.target.closest('.nav')){u.classList.remove('open');b.setAttribute('aria-expanded','false')}});
   }
+  // 실험실 도구 카드 영상 — 마우스를 올리면 소리 없이 재생, 클릭하면 크게(라이트박스). 영상은 클릭·호버 전엔 내려받지 않는다(preload=none).
+  var canHover=window.matchMedia&&window.matchMedia('(hover:hover)').matches;
+  document.querySelectorAll('.card .vid').forEach(function(b){
+    var v=b.querySelector('video');
+    if(canHover&&v){b.addEventListener('mouseenter',function(){b.classList.add('on');v.play().catch(function(){})});b.addEventListener('mouseleave',function(){b.classList.remove('on');v.pause()});}
+    b.addEventListener('click',function(){
+      var d=document.createElement('div');d.className='lightbox';
+      d.innerHTML='<div class="lb-in"><video controls autoplay playsinline></video><button class="lb-x" type="button" aria-label="close">✕</button></div>';
+      d.querySelector('video').src=b.getAttribute('data-video');
+      function close(){d.remove();document.removeEventListener('keydown',esc)}
+      function esc(e){if(e.key==='Escape')close()}
+      d.addEventListener('click',function(e){if(e.target===d||e.target.classList.contains('lb-x'))close()});
+      document.addEventListener('keydown',esc);document.body.appendChild(d);
+    });
+  });
   // 언어: 정적 사이트라 서버가 못 고른다. 첫 방문에만 브라우저 언어로 안내하고, 스위치를 누르면 그 선택을 기억한다.
   // 검색 로봇과 미리보기 봇은 건드리지 않는다. 짝이 있는 페이지에서만 움직인다.
   try{
