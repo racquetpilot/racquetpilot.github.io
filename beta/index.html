@@ -27,7 +27,7 @@
   <nav class="nav">
     <a class="logo" href="/"><img src="/assets/logo.png" alt="">RacquetPilot</a>
     <button class="burger" aria-label="메뉴" aria-expanded="false"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M1 2h20M1 8h20M1 14h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-    <ul><li><a href="/#app">TensionPilot</a></li><li><a href="/lab/">실험실</a></li><li><a href="/strings/">스트링</a></li><li><a href="/support/">지원</a></li><li><a class="lang" href="/en/beta/" data-lang-switch="en" hreflang="en">EN</a></li></ul>
+    <ul><li><a href="/#app">TensionPilot</a></li><li><a href="/learn/">가이드</a></li><li><a href="/lab/">실험실</a></li><li><a href="/strings/">스트링</a></li><li><a href="/support/">지원</a></li><li><a class="lang" href="/en/beta/" data-lang-switch="en" hreflang="en">EN</a></li></ul>
     <a class="btn small primary" href="/beta/">베타 신청</a>
   </nav>
 </header>
@@ -73,7 +73,7 @@ document.getElementById("betaForm").addEventListener("submit", async (e) => {
   const v = id => document.getElementById(id).value.trim();
   const st = document.getElementById("status");
   if (!v("f_name") || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("f_email")) || !v("f_device")) { st.textContent = "닉네임, 이메일, 기기는 꼭 적어 주세요."; st.style.color = "#8A4B12"; return; }
-  const f = { lang: "ko", name: v("f_name"), email: v("f_email"), device: v("f_device"), model: v("f_model"), hours: v("f_hours"), racquet: v("f_racquet"), string: v("f_string"), note: v("f_note"), website: v("f_web") };
+  const f = { lang: "ko", name: v("f_name"), email: v("f_email"), device: v("f_device"), model: v("f_model"), hours: v("f_hours"), racquet: v("f_racquet"), string: v("f_string"), note: v("f_note"), website: v("f_web"), source: (new URLSearchParams(location.search).get("from") || "").slice(0, 80) };
   st.style.color = "";
   if (FORM_ENDPOINT) {
     st.textContent = "보내는 중…";

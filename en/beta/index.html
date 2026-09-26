@@ -25,7 +25,7 @@
   <nav class="nav">
     <a class="logo" href="/en/"><img src="/assets/logo.png" alt="">RacquetPilot</a>
     <button class="burger" aria-label="Menu" aria-expanded="false"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M1 2h20M1 8h20M1 14h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-    <ul><li><a href="/en/#app">TensionPilot</a></li><li><a href="/en/lab/">Lab</a></li><li><a href="/en/strings/">Strings</a></li><li><a href="/en/support/">Support</a></li><li><a class="lang" href="/beta/" data-lang-switch="ko" hreflang="ko">한국어</a></li></ul>
+    <ul><li><a href="/en/#app">TensionPilot</a></li><li><a href="/en/learn/">Learn</a></li><li><a href="/en/lab/">Lab</a></li><li><a href="/en/strings/">Strings</a></li><li><a href="/en/support/">Support</a></li><li><a class="lang" href="/beta/" data-lang-switch="ko" hreflang="ko">한국어</a></li></ul>
     <a class="btn small primary" href="/en/beta/">Join the beta</a>
   </nav>
 </header>
@@ -71,7 +71,7 @@ document.getElementById("betaForm").addEventListener("submit", async (e) => {
   const v = id => document.getElementById(id).value.trim();
   const st = document.getElementById("status");
   if (!v("f_name") || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("f_email")) || !v("f_device")) { st.textContent = "Nickname, email and device are required."; st.style.color = "#8A4B12"; return; }
-  const f = { lang: "en", name: v("f_name"), email: v("f_email"), device: v("f_device"), model: v("f_model"), hours: v("f_hours"), racquet: v("f_racquet"), string: v("f_string"), note: v("f_note"), website: v("f_web") };
+  const f = { lang: "en", name: v("f_name"), email: v("f_email"), device: v("f_device"), model: v("f_model"), hours: v("f_hours"), racquet: v("f_racquet"), string: v("f_string"), note: v("f_note"), website: v("f_web"), source: (new URLSearchParams(location.search).get("from") || "").slice(0, 80) };
   st.style.color = "";
   if (FORM_ENDPOINT) {
     st.textContent = "Sending…";
