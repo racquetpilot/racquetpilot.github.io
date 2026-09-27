@@ -10,7 +10,6 @@ image: /assets/learn_when_lead.jpg
 image_alt: A worn racquet hanging in a stringing shop, one main string pushed out of line
 pair: when-to-restring
 related: [string-tension-guide, tension-loss]
-draft: 1
 ---
 
 You don't wait for a string to break. Long before that, it loses tension, gets pushed sideways and stops coming back. So "when should I restring my tennis racket" is really a different question: how much of day-one tension is left? Pair that number with what your arm tells you, and you can decide on your own racquet's terms, not someone else's schedule.

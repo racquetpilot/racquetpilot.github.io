@@ -10,7 +10,6 @@ image: /assets/learn_loss_lead.jpg
 image_alt: A freshly strung racquet on a clay baseline at dawn
 pair: tension-loss
 related: [when-to-restring, string-tension-guide]
-draft: 1
 ---
 
 Tennis strings are plastic filaments, nylon or polyester mostly, pulled to tens of pounds and tied to a frame. Stretched plastic under constant load slowly gives up force whether or not anything touches it. So tension starts dropping the moment the clamp opens, falls fastest in the first hours, then keeps sliding at a slower and slower pace. Every ball you hit adds a little on top.

@@ -10,7 +10,6 @@ image: /assets/learn_when_lead.jpg
 image_alt: 스트링 숍 벽에 걸린, 메인 줄이 밀린 라켓
 pair: when-to-restring
 related: [string-tension-guide, tension-loss]
-draft: 1
 ---
 
 끊어져야만 갈 때가 되는 건 아니에요. 줄은 끊어지기 한참 전에 텐션이 빠지고, 옆으로 밀린 뒤 제자리로 못 돌아오는 상태가 돼요. 그래서 "테니스 스트링 언제 갈아?"의 진짜 질문은 "끊어졌나"가 아니라 "맨 날 텐션이 지금 몇 % 남았나"예요. 그 숫자와 내 팔의 느낌을 같이 보면, 갈 때를 남의 시간표가 아니라 내 라켓 기준으로 정할 수 있어요.

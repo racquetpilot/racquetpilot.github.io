@@ -10,7 +10,6 @@ image: /assets/learn_tension_lead.jpg
 image_alt: A racquet mounted in a stringing machine, tension head pulling a string
 pair: string-tension-guide
 related: [when-to-restring, tension-loss]
-draft: 1
 ---
 
 There is no single right tension. There is a sensible place to start: the middle of the recommended range printed inside your racquet's throat, a few pounds under that if you're using polyester. From there you move in 2 lb steps and let your arm decide. The number you tell the stringer is a reference point; what the strings do in the weeks after is the part that actually matters.

@@ -10,7 +10,6 @@ image: /assets/learn_loss_lead.jpg
 image_alt: 새벽 클레이 코트 베이스라인에 놓인 갓 맨 라켓
 pair: tension-loss
 related: [when-to-restring, string-tension-guide]
-draft: 1
 ---
 
 테니스 줄은 대부분 나일론이나 폴리에스터, 그러니까 플라스틱 실이고, 그걸 수십 파운드로 당겨서 프레임에 묶어 둔 거예요. 당겨진 플라스틱은 가만히 둬도 조금씩 늘어나면서 힘을 풀어요. 그래서 텐션은 클램프가 열리는 순간부터 떨어지기 시작하고, 처음 몇 시간이 제일 가파르다가 점점 느려져요. 여기에 공을 치면 친 만큼이 더 얹혀요.

@@ -10,7 +10,6 @@ image: /assets/learn_tension_lead.jpg
 image_alt: 스트링 머신에 걸린 라켓 — 텐션 헤드가 줄을 당기는 중
 pair: string-tension-guide
 related: [when-to-restring, tension-loss]
-draft: 1
 ---
 
 정답 한 숫자는 없어요. 대신 많이 쓰는 출발점은 있어요 — 라켓 목에 붙은 권장 범위 스티커의 가운데쯤, 폴리라면 거기서 몇 파운드 낮게. 거기서 시작해서 두어 파운드씩 옮겨 가며 내 감을 찾는 게 순서예요. 그리고 머신에 찍은 숫자는 어디까지나 기준점이고, 정작 중요한 건 그 뒤로 줄이 어떻게 변하느냐예요.
