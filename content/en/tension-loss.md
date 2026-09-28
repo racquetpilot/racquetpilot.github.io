@@ -50,8 +50,6 @@ Poly is stiff. It does not stretch much, and once it does, it does not spring ba
 
 Here is the poly paradox. Poly is tough, so it rarely breaks. But its tension drains fast and its surface hardens, so its usefulness runs out long before it snaps. A multifilament frays and breaks, which is its way of telling you the date. Poly looks fine and dies quietly. That is where "dead poly" came from.
 
-![A freshly strung racquet next to a played-out one, mains notched](todo:new vs played-out racquet side by side)
-
 ## Why dead poly feels 'trampoline' to some and 'like a board' to others
 
 Both are right. Two things happen in the same bed at once.

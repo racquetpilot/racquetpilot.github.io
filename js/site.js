@@ -5,6 +5,9 @@
     b.addEventListener('click',function(){var o=u.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')});
     document.addEventListener('click',function(e){if(!e.target.closest('.nav')){u.classList.remove('open');b.setAttribute('aria-expanded','false')}});
   }
+  // 파트너 소개 팝업 (한국어 홈)
+  var pd=document.getElementById('partnerDlg');
+  if(pd&&pd.showModal){document.querySelectorAll('.partner-open').forEach(function(b){b.addEventListener('click',function(){pd.showModal()})});pd.querySelector('.dlg-x').addEventListener('click',function(){pd.close()});pd.addEventListener('click',function(e){if(e.target===pd)pd.close()});}
   // 실험실 도구 카드 영상 — 마우스를 올리면 소리 없이 재생, 클릭하면 크게(라이트박스). 영상은 클릭·호버 전엔 내려받지 않는다(preload=none).
   var canHover=window.matchMedia&&window.matchMedia('(hover:hover)').matches;
   document.querySelectorAll('.card .vid').forEach(function(b){

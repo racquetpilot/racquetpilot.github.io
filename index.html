@@ -28,7 +28,7 @@
   <nav class="nav">
     <a class="logo" href="/"><img src="/assets/logo.png" alt="">RacquetPilot</a>
     <button class="burger" aria-label="메뉴" aria-expanded="false"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M1 2h20M1 8h20M1 14h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-    <ul><li><a href="/#app">TensionPilot</a></li><li><a href="/learn/">가이드</a></li><li><a href="/lab/">실험실</a></li><li><a href="/strings/">스트링</a></li><li><a href="/support/">지원</a></li><li><a class="lang" href="/en/" data-lang-switch="en" hreflang="en">EN</a></li></ul>
+    <ul><li><a href="/#app">TensionPilot</a></li><li><a href="/learn/">스트링 이야기</a></li><li><a href="/lab/">실험실</a></li><li><a href="/strings/">스트링</a></li><li><a href="/support/">지원</a></li><li><a class="lang" href="/en/" data-lang-switch="en" hreflang="en">EN</a></li></ul>
     <a class="btn small primary" href="/beta/">베타 신청</a>
   </nav>
 </header>
@@ -95,7 +95,7 @@
     <div class="partner-in">
       <img src="/assets/partner_courtro.png" alt="테니스 코트로">
       <div><b>테니스 코트로 <small>(구리 코트로)</small></b><p>실측과 실험의 검증 및 자문</p></div>
-      <a class="link" href="#">링크 →</a>
+      <button class="link partner-open" type="button" aria-haspopup="dialog" aria-controls="partnerDlg">소개 보기 →</button>
     </div>
   </section>
 
@@ -104,6 +104,35 @@
   </section>
 </main>
 
+
+<dialog id="partnerDlg" class="dlg" aria-labelledby="partnerTitle">
+  <div class="dlg-in">
+    <button class="dlg-x" type="button" aria-label="닫기">✕</button>
+    <span class="lbl">Partner</span>
+    <h2 id="partnerTitle">테니스 코트로 <small>(구리 코트로)</small></h2>
+    <p>라켓과 스트링을 실제로 매고, 재고, 확인하는 현장이에요. 저희의 실측과 실험을 함께 검증하고, 스트링어 경력과 요넥스 스트링잉 팀에서 활동한 경험을 바탕으로 앱 개발을 자문해요. 매장에서는 <b>스트링·라켓 추천과 맞춤형 상담</b>도 하고 있어요.</p>
+    <div class="dlg-cols">
+      <div><h3>자격</h3><ul>
+        <li>고센 장인 HARIBITO <em>2013.08</em></li>
+        <li>KRSA Level R <em>2014.10</em></li>
+        <li>ERSA Master Racquet Technician <em>2015.10</em></li>
+        <li>ERSA Pro Tour Stringer Level 1 <em>2018.10</em></li>
+      </ul></div>
+      <div><h3>대회 스트링잉</h3><ul>
+        <li>Busan Open Challenger 2013~2018 (6년) · 2015 우승 선수 전담 스트링잉</li>
+        <li>Toray Pan Pacific Open WTA 2017 · Yonex 팀</li>
+        <li>Korea Open WTA 2019·2022 · Babolat 팀</li>
+        <li>제75회 전한국선수권 2020 · KTA 팀</li>
+        <li>안동오픈 2021~2024 · Yonex 스트링잉 팀</li>
+        <li>제57회 바볼랏 전국 남녀 중고등학교 대회 2021</li>
+        <li>호주오픈 2023 · Yonex 스트링잉 팀</li>
+        <li>Seoul Open Challenger 2024</li>
+        <li>Gwangju Open Challenger 2025 · Yonex 팀</li>
+      </ul></div>
+    </div>
+    <p class="limit">경력에 적힌 대회·브랜드 명칭은 사실 관계를 밝히기 위한 것이에요. RacquetPilot 은 어떤 라켓·스트링 제조사와도 제휴 관계가 없어요.</p>
+  </div>
+</dialog>
 <footer class="wrap foot"><span>RacquetPilot LLC</span><span class="links"><a href="/privacy/">개인정보 처리방침</a><a href="/support/">지원</a><a href="/en/" data-lang-switch="en" hreflang="en">EN</a></span></footer>
 <div class="sticky-cta"><span>내 줄, 처음의 몇 %?</span><a class="btn primary" href="/beta/">베타 신청</a></div>
 <script src="/js/site.js"></script>
