@@ -88,13 +88,8 @@ section.block{padding-block:48px}
 /* example (두 비교) */
 .tag{font-style:normal;font-size:11px;font-weight:700;letter-spacing:.06em;padding:2px 7px;border-radius:4px;border:1px solid var(--line);color:var(--ink2);background:var(--card);vertical-align:middle;margin-left:4px;white-space:nowrap}
 #example .sec-sub{max-width:none}
-.example{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:36px;align-items:center}
 .ex-shot{margin:0;justify-self:center;width:min(330px,100%);border:1px solid var(--line);border-radius:28px;overflow:hidden;background:var(--card);box-shadow:0 20px 40px rgba(23,44,67,.12)}
 .ex-shot img{display:block;width:100%;height:auto;aspect-ratio:393/852;object-fit:contain}
-.ex-list{list-style:none;margin:0;padding:0;display:grid;gap:18px;counter-reset:ex}
-.ex-list li{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;counter-increment:ex}
-.ex-list li::before{content:counter(ex,decimal-leading-zero);grid-row:span 2;font-weight:800;color:var(--data);font-size:13px;padding-top:4px;font-variant-numeric:tabular-nums}
-.ex-list b{font-size:18px}.ex-list p{margin:0;color:var(--ink2);font-size:15px}
 #example .limit{margin-top:24px}
 /* evidence */
 .ev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -197,9 +192,9 @@ section.block{padding-block:48px}
 .area .num small{font-size:18px;font-weight:600;color:var(--ink2);margin-left:6px}
 .area .kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14px;margin:14px 0}
 .area .kv dt{color:var(--ink2)}.area .kv dd{margin:0;font-weight:600}
-.trio{list-style:none;margin:0 0 18px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.trio{list-style:none;margin:0 0 18px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .trio li{border:1px solid var(--line);border-radius:14px;padding:18px}
-.trio b{display:block;font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.trio b{display:block;font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1;word-break:keep-all}.trio b small{font-size:20px;font-weight:700;margin-right:2px}
 .trio b.tbd{color:var(--line)}.trio span{display:block;font-size:13px;color:var(--ink2);margin-top:6px}
 .limit{background:var(--feature);border-radius:14px;padding:16px 18px;font-size:15px}
 /* ---- beta form / prose ---- */
@@ -235,7 +230,7 @@ section.block{padding-block:48px}
   .nav .burger{color:var(--header-ink)}
   .scene-grid,.example,.ev-grid{grid-template-columns:1fr}
   .ctx-grid{grid-template-columns:1fr}
-  .example{gap:24px}.ex-shot{width:min(280px,100%)}
+  .ex-shot{width:min(280px,100%)}
   .access{flex-direction:column;align-items:flex-start;gap:16px;padding:24px 22px}
   .proof-line{font-size:16px}
   .how-media .devphone{right:0;bottom:-20px}
@@ -243,7 +238,8 @@ section.block{padding-block:48px}
   .devphone{width:230px}.devphone.sm{width:120px}
   .diff-list{grid-template-columns:1fr 1fr;gap:14px}
   .how{grid-template-columns:1fr}
-  .prod-grid,.tool-grid,.series-grid,.trio,.two,.area,.art-list{grid-template-columns:1fr}
+  .prod-grid,.tool-grid,.series-grid,.two,.area,.art-list{grid-template-columns:1fr}
+  .trio{grid-template-columns:1fr 1fr}
   .article h1{font-size:30px}
   .maker-in{flex-direction:column;align-items:flex-start}
   .partner-in{flex-direction:column;align-items:flex-start;gap:14px}
@@ -278,3 +274,32 @@ section.block{padding-block:48px}
 .brand td.ok span{color:var(--ink2)}
 @media (max-width:1100px) and (min-width:821px){.hero{gap:25px}.hero .devphone,.hero-media .cap{width:278px}.hero-media .decor{width:465px}}
 @media (max-width:520px){.hero-media{padding-right:0}.hero .devphone{width:min(286px,90%);border-radius:32px}.hero-media .cap{width:min(286px,90%);font-size:11px}.hero-media .decor{width:395px;left:-116px;top:1px}}
+/* ---- 샵 고정 QR 랜딩 /s/<no>/ ---- */
+.review-note{padding:7px 18px;color:#8A4B12;background:#FBF3E4;border-bottom:1px solid #E6D3B0;text-align:center;font-size:12px;font-weight:600}
+.shop-hero h1{font-size:40px;line-height:1.1;letter-spacing:-.02em;margin:0 0 12px;word-break:keep-all;text-wrap:balance}
+.shop-no{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--feature);border-radius:var(--r);padding:18px 22px;margin-top:8px}
+.shop-no span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);font-weight:700}
+.shop-no b{font-size:48px;line-height:1;letter-spacing:.06em;font-variant-numeric:tabular-nums;color:var(--selected-ink)}
+.os-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.os-card{display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;background:var(--card);text-decoration:none;color:inherit}
+.os-card b{font-size:19px}.os-card p{margin:0;color:var(--ink2);font-size:14.5px}.os-card .btn{align-self:flex-start;margin-top:6px}
+.os-card.mine{border:2px solid var(--action)}.os-card.other{opacity:.85}.os-card.other .btn.primary{background:transparent;color:var(--link);border-color:var(--link)}
+.shop-page .hint{font-size:13px;color:var(--ink2);margin:14px 0 0}
+.shop-steps b .num{font-style:normal;background:var(--selected);color:var(--selected-ink);padding:0 .3em;border-radius:6px;font-variant-numeric:tabular-nums}
+#connect .limit{margin-top:22px}
+@media (max-width:820px){.os-grid{grid-template-columns:1fr}.shop-hero h1{font-size:32px}.shop-no b{font-size:40px}}
+/* 홈 Example: 상세 한 컷 + 설명 3항목 (새 캡처 전까지) */
+.example{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:36px;align-items:center}
+.ex-list{list-style:none;margin:0;padding:0;display:grid;gap:18px;counter-reset:ex}
+.ex-list li{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;counter-increment:ex}
+.ex-list li::before{content:counter(ex,decimal-leading-zero);grid-row:span 2;font-weight:800;color:var(--data);font-size:13px;padding-top:4px;font-variant-numeric:tabular-nums}
+.ex-list b{font-size:18px}.ex-list p{margin:0;color:var(--ink2);font-size:15px}
+@media (max-width:820px){.example{grid-template-columns:1fr;gap:24px}}
+/* ---- 홈 Example 대안: 내 라켓 + 플레이 두 컷 (T-PM-018, 새 캡처 뒤 사용) ---- */
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.shot{margin:0;display:grid;grid-template-columns:230px minmax(0,1fr);gap:18px;align-items:center}
+.shot .ex-shot{width:100%;justify-self:start}.shot figcaption b{display:block;font-size:19px;margin-bottom:6px}.shot figcaption p{margin:0;color:var(--ink2);font-size:15px}
+.ph-shot{display:grid;place-items:center;aspect-ratio:393/852;color:var(--ink2);font-size:13px;line-height:1.5;text-align:center;border:1px dashed var(--line);box-shadow:none}
+.recap{display:none}html[data-review] .recap{display:inline-block;margin-top:8px;font-style:normal;font-size:12px;font-weight:600;color:#8A4B12;background:#FBF3E4;padding:3px 8px;border-radius:6px}
+@media (max-width:820px){.shots{grid-template-columns:1fr;gap:22px}.shot{grid-template-columns:1fr;justify-items:center;text-align:center}.shot .ex-shot{width:min(250px,100%);justify-self:center}}
+@media (max-width:1100px) and (min-width:821px){.shot{grid-template-columns:190px minmax(0,1fr)}}

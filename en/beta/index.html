@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Join the TensionPilot beta</title>
-<meta name="description" content="TensionPilot closed beta. An email and your device (iPhone / Android) is all we need to send an invite.">
+<meta name="description" content="TensionPilot closed beta. A nickname, an email and your device (iPhone / Android) are all we need to send an invite.">
 <link rel="canonical" href="https://racquetpilot.com/en/beta/">
 <link rel="alternate" hreflang="en" href="https://racquetpilot.com/en/beta/">
 <link rel="alternate" hreflang="ko" href="https://racquetpilot.com/beta/">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RacquetPilot">
 <meta property="og:title" content="Join the TensionPilot beta">
-<meta property="og:description" content="An email and your device is all we need.">
+<meta property="og:description" content="A nickname, an email and your device are all we need.">
 <meta property="og:url" content="https://racquetpilot.com/en/beta/">
 <meta property="og:image" content="https://racquetpilot.com/assets/scene_grass.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -34,7 +34,7 @@
   <section class="block prose">
     <span class="lbl">Beta</span>
     <h1>Join the TensionPilot beta</h1>
-    <p>It's invite-only, and an email is all we need. iPhone gets a TestFlight invite, Android gets the install file. We usually reply within two days. In the beta the app still shows up as <b>RacquetPilot</b>.</p>
+    <p>It's invite-only. A nickname, an email and your device are all we need. iPhone gets a TestFlight invite; Android gets a Firebase App Distribution invite by email — install from the link in that email (it is not on the Play Store). We usually reply within two days. In the beta the app still shows up as <b>RacquetPilot</b>.</p>
   </section>
   <section class="block" style="padding-top:0">
     <form class="form" id="betaForm" novalidate>
@@ -55,7 +55,7 @@
       <label><span class="lt">String and tension <em>(optional)</em></span><input type="text" id="f_string" name="string" placeholder="e.g. Solinco Hyper-G 1.20, 52 lb"></label>
       <label><span class="lt">Anything else <em>(optional)</em></span><textarea id="f_note" name="note" placeholder="Questions, hopes, anything."></textarea></label>
       <div class="actions"><button class="btn primary" type="submit">Send the request</button><span class="status" id="status"></span></div>
-      <p class="hint">The button sends this straight to our inbox. If the server doesn't answer, your mail app opens instead. If neither works, write to <a href="mailto:racquetpilot@gmail.com">racquetpilot@gmail.com</a>. We use this only for the invite, as described in the privacy policy.</p>
+      <p class="hint">The button sends this straight to our inbox. If the server doesn't answer, your mail app opens instead. If neither works, write to <a href="mailto:support@racquetpilot.com">support@racquetpilot.com</a>. We use this only for the invite, as described in the privacy policy.</p>
     </form>
   </section>
 </main>
@@ -65,7 +65,7 @@
 <script>
 // 전송: Cloudflare Worker(worker/beta-form) 로 JSON POST. 서버가 응답하지 않으면 메일 앱(mailto)으로 넘어간다. 분석 도구 없음.
 const FORM_ENDPOINT = "https://forms.racquetpilot.com/beta";
-const TO = "racquetpilot@gmail.com";
+const TO = "support@racquetpilot.com";
 document.getElementById("betaForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   const v = id => document.getElementById(id).value.trim();
